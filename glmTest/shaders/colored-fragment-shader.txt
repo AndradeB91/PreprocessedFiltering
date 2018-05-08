@@ -1,0 +1,25 @@
+#version 150
+
+uniform sampler2D tex; //this is the texture
+in vec2 fragTexCoord; //this is the texture coord
+out vec4 finalColor; //this is the output color of the pixel
+
+//in vec3 vertFrag;
+
+void main() {
+
+//vec2 circCoord = 2.0 * gl_PointCoord - 1.0;
+
+//if (dot(circCoord, circCoord) > 1.0) {
+//  discard;
+//}
+
+//set every drawn pixel to white
+////finalColor = vec4(gl_PointCoord,0.0,1.0);
+//finalColor = vec4(vertFrag.x+0.5, vertFrag.y+0.5,vertFrag.z+0.5, 1.0);
+
+finalColor = vec4(1.0, 1.0, 1.0, 1.0);
+
+//finalColor = texture(tex, fragTexCoord);
+}
+

@@ -1,0 +1,12 @@
+#version 150
+
+uniform float pointSize;
+in vec3 vert;
+
+out vec3 vertFrag;
+
+void main() {
+    // does not alter the verticies at all
+    gl_Position = vec4(vert, 1);
+    //vertFrag = vert;
+}
